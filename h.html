@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>copy by refrence</title>
+</head>
+<body>
+  <script>
+    const object1 = {
+      message: 'hello',
+      price: 589
+    };
+    const object2 = object1;
+
+    object2.message = 'goodbye';
+    console.log(object1);
+    console.log(object2);
+  </script>
+</body>
+</html>
+
+<!-- {message: 'goodbye', price: 589}
+     {message: 'goodbye', price: 589} -->

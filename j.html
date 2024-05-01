@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>destructuring</title>
+</head>
+<body>
+  <script>
+    const object1 = {
+      message: 'hello',
+      price: 589
+    };
+
+    // const object3 = {
+    //     message: 'hello'
+    // };
+    // object1 has property message which is assigned to variable message -> destructuring
+      // const message = object1.message
+    const { message, price } = object1;
+    console.log(message);
+    console.log(price);
+  </script>
+</body>
+</html>
+
+<!-- Shortcuts = destructuring, shorthand-property, shorthand-method-->

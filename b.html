@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bracket-notation</title>
+</head>
+<body>
+  <script>
+    const product ={
+      name: 'shirt',
+      ['delivery-time'] : '1 day'
+    };
+
+    console.log(product);
+    console.log(product.name);
+    console.log(product['name']);
+    console.log(product['brand']);
+    console.log(product['delivery-time']);
+    // console.log(product.delivery-time); 
+  </script>
+</body>
+</html>
+
+<!-- bracket notation helps in using property that doesn't work with dot notation -->

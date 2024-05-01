@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>shorthand-property</title>
+</head>
+<body>
+  <script>
+    const object1 = {
+      message: 'hello charlie',
+      price: 589
+    };
+
+    const { message, price } = object1;
+    
+    // when we have property and variable name same we can type it once 
+    const object3 = {
+        // message: message
+        message
+    };
+
+    console.log(object3);
+
+  </script>
+</body>
+</html>

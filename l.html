@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>shorthand-method</title>
+</head>
+<body>
+  <script>
+    const object1 = {
+      message: 'hello charlie',
+      price: 589
+    };
+
+    const { message, price } = object1;
+    
+    const object3 = {
+        // method: function function1(){
+        //   console.log('jerry');
+        // }
+
+        // method: function(){
+        //   console.log('bruno');
+        // },
+
+        method(){ // shorthand-method
+          console.log('tom');
+        }
+    };
+
+    object3.method();
+
+  </script>
+</body>
+</html>

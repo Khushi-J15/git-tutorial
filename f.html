@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>f.html</title>
+</head>
+<body>
+  <script>
+    const product2 = {
+      name: 'skirt',
+      'delivery-time': '1 day',
+      rating : {
+        stars : 4.7,
+        count : 89
+      },
+
+      fun: function function1(){
+        console.log('function inside object');
+      }
+    };
+
+    console.log(JSON.stringify(product2)); // stringify converts javascript object into json object
+    const jsonString = JSON.stringify(product2);
+    console.log(JSON.parse(jsonString)); // parse() converts JSON object into js object
+  </script>
+</body>
+</html>
+
+<!-- JSON object is same as js object but have less features -->
+
+<!-- JSON object doesn't have functions -->
+<!-- JSON object have everything in "double quotes" -->
